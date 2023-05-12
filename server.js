@@ -23,7 +23,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //Rutas
-//port = process.env.PORT || 3001;
+port = process.env.PORT || 3001;
 //Iniciar el servidor
 app.use("/", require("./routes/usuarios-routes.js"));
 app.listen(port, () => console.log("El servidor esta escuchando..."));
